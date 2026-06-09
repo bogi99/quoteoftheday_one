@@ -1,0 +1,6 @@
+FROM gemma3:4b
+TEMPLATE "{{ .Prompt }}"
+RENDERER qwen3.5
+PARSER gemma qwen3.5
+PARAMETER temperature 0.3
+

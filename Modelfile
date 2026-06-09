@@ -1,0 +1,5 @@
+FROM gemma4:e2b
+# Strict context memory cap for 8GB GPUs
+PARAMETER num_ctx 4096
+PARAMETER num_predict 512
+
