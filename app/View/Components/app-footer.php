@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class app-footer extends Component
+class AppFooter extends Component
 {
     /**
      * Create a new component instance.

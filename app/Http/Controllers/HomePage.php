@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Quotes;
 use Illuminate\Support\Facades\Concurrency;
 
-
 class HomePage extends Controller
 {
     public function index()
@@ -34,4 +33,3 @@ class HomePage extends Controller
         ]);
     }
 }
-
