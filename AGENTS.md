@@ -32,8 +32,6 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 
 - You must follow all existing code conventions used in this application. When creating or editing a file, check sibling files for the correct structure, approach, and naming.
 - Use descriptive names for variables and methods. For example, `isRegisteredForDiscounts`, not `discount()`.
-- Enforce PSR-4 for PHP classes: class names use StudlyCase, filenames match the class name exactly (case-sensitive), and namespace path matches directory structure.
-- Use standard PHP naming conventions: variables and methods use camelCase, constants use UPPER_SNAKE_CASE.
 - Check for existing components to reuse before writing a new one.
 
 ## Verification Scripts
@@ -116,9 +114,8 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 
 # Test Enforcement
 
-- Write or update tests when a change needs test coverage.
-- Testing execution policy: Do not run tests automatically after code changes. Only run tests when the user explicitly asks.
-- When the user asks to run tests, run the minimum necessary scope, preferably `php artisan test --compact` with a specific filename or filter.
+- Every change must be programmatically tested. Write a new test or update an existing test, then run the affected tests to make sure they pass.
+- Run the minimum number of tests needed to ensure code quality and speed. Use `php artisan test --compact` with a specific filename or filter.
 
 === laravel/core rules ===
 
